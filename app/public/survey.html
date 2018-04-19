@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder | Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Survey Questions</h2>
+                <hr>
+                <h3>About You</h3>
+                <form method="POST" role="form">
+                    <p>Name(Required)</p>
+                        <input type="text" name="name" placeholder="ex: John Doe">
+                    <p>Link to Profile Picture (Required)</p>
+                        <input type="text" name="picture" placeholder="ex: http://www.photo.org">
+                <hr>
+                    <h4>Question 1:</h4>
+                        <p>You'd rather stay home than go out.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 2:</h4>
+                        <p>You travel frequently.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 3:</h4>
+                        <p>You enjoy discussing complex topics with people.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 4:</h4>
+                        <p>Family is important to you.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 5:</h4>
+                        <p>Your personal life is more important than your professional life.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 6:</h4>
+                        <p>You'd rather have a few good friends than a large group of friends.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 7:</h4>
+                        <p>You follow politics closely.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 8:</h4>
+                        <p>You generally consider yourself good with money.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 9:</h4>
+                        <p>You feel strongly about your space being clean.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <h4>Question 10:</h4>
+                        <p>You are rarely upset or annoyed.</p>
+                        <select>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>   
+  
+  <!-- Modal Button -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Submit</button>
+
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">Your Match!</h5>
+        </div>
+        <div class="modal-body">
+          <p>blahblahblah</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    $('#myModal').modal()
+</script> --> 
+<script type="text/javascript">
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newCharacter = {
+        name: $("#name").val().trim(),
+        role: $("#role").val().trim(),
+        age: $("#age").val().trim(),
+        forcePoints: $("#force-points").val().trim()
+      };
+
+
+      $.post("/api/characters", newCharacter)
+        .then(function(data) {
+          console.log("add.html", data);
+          alert("Adding character...");
+        });
+    });
+  </script>
+</body>
+</html>
